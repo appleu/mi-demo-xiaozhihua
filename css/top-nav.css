@@ -1,27 +1,75 @@
 .top-nav {
     height:40px;
     background-color: #333;
-    /* border:1px solid #333; */
 }
 
 .top-nav-content{
     height: 40px;
-    /* background-color:  */
+}
+
+.t-left,.t-right{
+    position: relative;
+    padding:10px 0;
 }
 
 .t-right{
-    /* width: 240px; */
+    padding-right:120px;
 }
 
 .t-left li a , .t-right a{
     display: block;
     padding:0 10px;
-    /* width:80px; */
-    height:40px;
-    line-height: 40px;
+    height:20px;
+    line-height: 20px;
     color:#b0b0b0;
     text-align: center;
+    border-right:1px solid #444;
 }
+
+.t-left li:last-child a , .t-right a:last-child{
+    border-right: none;
+}
+
+.t-right a:last-child{
+    position: absolute;
+    top:0;
+    right:0;
+    width:120px;
+    height:40px;
+    line-height: 40px;
+    background-color: #444;
+}
+
+.t-right a{
+    float: left;
+}
+
+.t-right a:last-child div.t-car-content{
+    display: none;
+    position: absolute;
+    top:40px;
+    left: -199px;
+    width: 320px;
+    height: 100px;
+    line-height: 100px;
+    color:#b0b0b0;
+    border:1px solid #ccc;
+    border-top:none;
+}
+
+.t-left li a:hover,.t-right a:not(:last-child):hover{
+    color:#fff;
+}
+
+.t-right a:last-child:hover{
+    color:#f60;
+    background-color: #fff;
+    /* outline:1px solid #ccc; */
+}
+.t-right a:last-child:hover div.t-car-content{
+    display: block;
+}
+
 
 
 
