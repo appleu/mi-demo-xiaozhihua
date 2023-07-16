@@ -1,0 +1,43 @@
+html{
+    font:12px / 1.5 "Micorosoft Yahei";
+    color:#333;
+}
+
+body,ul,div,a{
+    margin:0;
+    padding:0;
+
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+    color:#333;
+}
+
+a:visited{
+    
+}
+
+ul{
+    list-style-type:none;
+}
+
+
+
+
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+
+clearfix{
+    clear:both;
+}
+
+.container{
+    width: 1226px;
+    margin:0 auto;
+}
